@@ -3,6 +3,7 @@ package br.com.rms.githubclient;
 import android.app.Application;
 import android.content.Context;
 
+import dagger.android.DaggerApplication;
 import timber.log.Timber;
 
 /**
@@ -32,6 +33,7 @@ public class GitHubClientApplication extends Application {
     }
 
     private void initAppComponent() {
+
         /*appComponent = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();*/
